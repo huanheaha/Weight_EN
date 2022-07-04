@@ -36,7 +36,10 @@ y_pre = logit.predict(X_test, pyspark=False)
 """y_pre: prediction probability of independent test set
 """  
 ```
-print(y_pre[95:105])
-[0.8692451  0.68239113 0.72763984 0.68313643 0.51682172 0.16294713
- 0.17701993 0.77651004 0.52424665 0.55346663]
+Prediction results will show in the terminal.
 ```
+print(y_pre[:10])
+[0.77605729 0.49160284 0.77872351 0.66705835 0.58397401 0.73701146
+ 0.76280227 0.62244287 0.48524927 0.62714534]
+```
+
