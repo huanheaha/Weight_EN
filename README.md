@@ -20,3 +20,12 @@ python setup.py install
 * Acquire all the data and code in Weight_EN to the local address.
 * Open Python editor,then dictory to Weight_EN folder which contains example.py. 
 * Make sure the data and code are in one folder,or enter the exact data address when you run the code.
+## **An example of applying the Stacked SGL is provided in example.py.** <br>
+Running the example in example.py. Specific example including parameter description and parameter selection is provided in this file.
+```
+
+"""
+y_pre, coef, Auc, Acc = S_S.Pre_MRL(Data, Data_test)  
+""" y_pre : classification results of independent test set  
+"""      
+```
