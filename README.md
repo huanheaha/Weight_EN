@@ -33,6 +33,10 @@ wj: feature weight
 lambd: regularization parameter
 """                     
 y_pre = logit.predict(X_test, pyspark=False)
-"""y_pre: prediction probability of independent test set"""  
+"""y_pre: prediction probability of independent test set
+"""  
 ```
-
+print(y_pre[95:105])
+[0.8692451  0.68239113 0.72763984 0.68313643 0.51682172 0.16294713
+ 0.17701993 0.77651004 0.52424665 0.55346663]
+```
