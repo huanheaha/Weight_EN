@@ -16,3 +16,7 @@ You can also clone the repository and do a manual install.
 git clone https://github.com/huanheaha/Weight_EN.git
 python setup.py install
 ```
+# Running the Code
+* Acquire all the data and code in Weight_EN to the local address.
+* Open Python editor,then dictory to Weight_EN folder which contains example.py. 
+* Make sure the data and code are in one folder,or enter the exact data address when you run the code.
