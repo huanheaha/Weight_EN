@@ -13,6 +13,6 @@ scikit-learn >= 0.23.2
 ```
 You can also clone the repository and do a manual install.
 ```
-git clone https://github.com/huanheaha/Stacked-SGL.git
+git clone https://github.com/huanheaha/Weight_EN.git
 python setup.py install
 ```
