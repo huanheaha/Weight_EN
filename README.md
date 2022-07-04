@@ -45,5 +45,5 @@ print(y_pre[:10])
 The parameters alpha and lambd can be adjusted according to user requirements.
 # Announcements
 * The input data set should be standardized.
-* The csv files of LIHC_kegg_path.csv, THCA_kegg_path.csv and Lung_kegg_path.csv represent the final mRNA gene expression data of three cancer genes trained in the model. The gene_weight is gene weight data, i.e. [degree,rank,1/rank].
+* The csv files of LIHC_kegg_path.csv, THCA_kegg_path.csv and Lung_kegg_path.csv represent the final mRNA gene expression data of three cancer genes trained in the model. The csv file of gene_weight.csv is gene weight data, i.e. [degree,rank,1/rank].
 * For example, the optimal parameters are trained in THCA_best.model.You can run predict.py to obtain the prediction results of the real data.
