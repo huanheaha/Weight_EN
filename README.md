@@ -1,4 +1,18 @@
 # Weight_EN
-The tool for cancer classfication and gene selection
 * Weight_elasticnet uses a statistic regularization method by integrating structure information and overlap of multiple pathways for analysis of high-dimensional gene
 expression data.
+## Installation
+* It is required to install the following dependencies in order to be able to run the package: For the weighted elastic net method of the package named weight_elasticnet
+```
+python >= 3.5
+numpy = 1.18.4
+pandas = 0.23.4
+joblib = 1.0.0
+scipy >= 1.4.1
+scikit-learn >= 0.23.2
+```
+You can also clone the repository and do a manual install.
+```
+git clone https://github.com/huanheaha/Stacked-SGL.git
+python setup.py install
+```
