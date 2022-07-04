@@ -23,9 +23,21 @@ python setup.py install
 ## **An example of applying the Stacked SGL is provided in example.py.** <br>
 Running the example in example.py. Specific example including parameter description and parameter selection is provided in this file.
 ```
-
+matrix: inpute training matrix
+alpha: α∈[0,1] which determines the relative weight of the l_1 and l_2 norm.
+wj: feature weight
+lambd: regularization parameter
 """
-y_pre, coef, Auc, Acc = S_S.Pre_MRL(Data, Data_test)  
-""" y_pre : classification results of independent test set  
-"""      
+from weight_elasticnet.Weight_EN import LogisticRegElastic
+logit = LogisticRegElastic()
+coef_path = logit.fit(matrix, alpha, wj, precision = 0.0001,
+                          lambda_grid =[lambd], pyspark=False)
+""" Data: P of the cross-validation set  probability matrix outputing 
+           on the  base learner. n_train * T_base 
+    Data_test: representing the independent test set probability matrix outputing 
+              on the base learner. n_test * T_base
+"""                     
+y_pre = logit.predict(X_test, pyspark=False)
+"""y_pre: prediction probability of independent test set"""  
 ```
+
